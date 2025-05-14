@@ -1066,33 +1066,45 @@
 <script>
 
 var swiper = new Swiper(".mySwiper", {
-      direction: "horizontal",
-      slidesPerView: 3,
-      spaceBetween: 20,
-      loop: true,
-      speed: 400,
-      grabCursor: true,
-      touchRatio: 1,
-      touchAngle: 45,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 1.2
-        },
-        640: {
-          slidesPerView: 2
-        },
-        1024: {
-          slidesPerView: 3.5
-        },
-        1280: {
-          slidesPerView: 3.5
-        }
-      }
-    });
+  direction: "horizontal",
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true, // Enable infinite loop
+  speed: 400,
+  grabCursor: true,
+  touchRatio: 1,
+  touchAngle: 45,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1.2,
+      loopAdditionalSlides: 1 // Adjusted loop slides to prevent too many clones
+    },
+    640: {
+      slidesPerView: 2,
+      loopAdditionalSlides: 1 // Adjusted for smoother transition
+    },
+    1024: {
+      slidesPerView: 3.5,
+      loopAdditionalSlides: 2
+    },
+    1280: {
+      slidesPerView: 3.5,
+      loopAdditionalSlides: 2
+    }
+  },
+  loopFillGroupWithBlank: true, // Ensures the slider stays seamless and doesn't jump
+  // This ensures extra slides are loaded to loop
+  on: {
+    init: function () {
+      console.log('Swiper initialized with loop');
+    }
+  }
+});
+
 
 
 
@@ -1128,33 +1140,55 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-     function toggleAccordion(id) {
-      const accordion = document.getElementById(id);
-      const content = accordion.querySelector(".accordion-content");
-      const chevron = accordion.querySelector(".chevron");
+function toggleAccordion(id) {
+  const allAccordions = document.querySelectorAll(".accordion");
+  
+  allAccordions.forEach((accordion) => {
+    const content = accordion.querySelector(".accordion-content");
+    const chevron = accordion.querySelector(".chevron");
 
-      const isOpen = content.classList.contains("open");
-
-      if (isOpen) {
-        content.style.height = content.scrollHeight + "px";
-        requestAnimationFrame(() => {
-          content.style.height = "0px";
-          content.classList.remove("open");
-          accordion.classList.remove("open");
-        });
-      } else {
-        content.style.height = content.scrollHeight + "px";
-        content.classList.add("open");
-        accordion.classList.add("open");
-        content.addEventListener("transitionend", () => {
-          if (content.classList.contains("open")) {
-            content.style.height = "auto";
-          }
-        }, { once: true });
-      }
-
-      chevron.classList.toggle("rotate");
+    if (accordion.id !== id) {
+      // Close other accordions
+      if (content) content.style.height = "0px";
+      if (content) content.classList.remove("open");
+      accordion.classList.remove("open");
+      if (chevron) chevron.classList.remove("rotate");
     }
+  });
+
+  const currentAccordion = document.getElementById(id);
+  const currentContent = currentAccordion ? currentAccordion.querySelector(".accordion-content") : null;
+  const currentChevron = currentAccordion ? currentAccordion.querySelector(".chevron") : null;
+
+  if (!currentContent || !currentChevron) return; // Exit if content or chevron is not found
+
+  const isOpen = currentContent.classList.contains("open");
+
+  if (isOpen) {
+    // Close current
+    currentContent.style.height = currentContent.scrollHeight + "px";
+    requestAnimationFrame(() => {
+      currentContent.style.height = "0px";
+      currentContent.classList.remove("open");
+      currentAccordion.classList.remove("open");
+    });
+    currentChevron.classList.remove("rotate");
+  } else {
+    // Open current
+    currentContent.style.height = currentContent.scrollHeight + "px";
+    currentContent.classList.add("open");
+    currentAccordion.classList.add("open");
+    currentChevron.classList.add("rotate");
+
+    currentContent.addEventListener("transitionend", () => {
+      if (currentContent.classList.contains("open")) {
+        currentContent.style.height = "auto";
+      }
+    }, { once: true });
+  }
+}
+
+
 
 
   // Get all elements with the class 'margin-sections'
