@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top-Selling IV Therapy Packages</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <!-- Bootstrap CSS (optional for layout) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+
+    .custom-card {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 20px 20px 20px 110px;
+      background: rgba(105, 35, 72, 0.08);
+      backdrop-filter: blur(19.25px);
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .custom-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .custom-space-evenly {
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      background-color: #692348;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      cursor: pointer;
+    }
+
+    .swiper-button-prev {
+      left: -30px;
+    }
+
+    .swiper-button-next {
+      right: -30px;
+    }
+
+    .swiper-button-next img,
+    .swiper-button-prev img {
+      width: 20px;
+      height: 20px;
+      filter: invert(1);
+    }
+
+    @media (max-width: 768px) {
+      .swiper-button-prev,
+      .swiper-button-next {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="sec-11 py-5">
+    <div class="container text-center">
+      <h2 class="mb-3">Top-Selling IV Therapy Packages</h2>
+
+      <!-- Swiper Container -->
+      <div class="swiper custom-swiper">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="d-flex custom-space-evenly gap-3">
+              <div class="card custom-card">
+                <img src="Images/image 1 (1) 1 (4).png" class="card-img-top mx-auto d-block mt-3" alt="Image 1" />
+                <div class="card-body text-center">
+                  <h5 class="card-title">NAD+ IV Drip</h5>
+                </div>
+              </div>
+              <div class="card custom-card">
+                <img src="Images/image 2 (1) 1.png" class="card-img-top mx-auto d-block mt-3" alt="Image 2" />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Glutathione IV Drip</h5>
+                </div>
+              </div>
+              <div class="card custom-card">
+                <img src="Images/image - 2025-05-13T113005.033.png" class="card-img-top mx-auto d-block mt-3" alt="Image 3" />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Hydration Boost IV</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="d-flex custom-space-evenly gap-3">
+              <div class="card custom-card">
+                <img src="Images/image 1 (1) 1 (4).png" class="card-img-top mx-auto d-block mt-3" alt="Image 1" />
+                <div class="card-body text-center">
+                  <h5 class="card-title">NAD+ IV Drip</h5>
+                </div>
+              </div>
+              <div class="card custom-card">
+                <img src="Images/image 2 (1) 1.png" class="card-img-top mx-auto d-block mt-3" alt="Image 2" />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Glutathione IV Drip</h5>
+                </div>
+              </div>
+              <div class="card custom-card">
+                <img src="Images/image - 2025-05-13T113005.033.png" class="card-img-top mx-auto d-block mt-3" alt="Image 3" />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Hydration Boost IV</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-button-prev">
+          <img src="Images/Arrow 1 (3).png" alt="Previous" />
+        </div>
+        <div class="swiper-button-next">
+          <img src="Images/Arrow 1 (2).png" alt="Next" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Swiper Init -->
+  <script>
+    const swiper = new Swiper('.custom-swiper', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 1,
+        },
+        992: {
+          slidesPerView: 1,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>
