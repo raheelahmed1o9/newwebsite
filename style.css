@@ -14,7 +14,31 @@ body {
 .tag-section{
     margin: 0;
 }
-.tag-section p{
+
+
+
+
+
+.marquee-fixed {
+  position: fixed;
+  top: 0; /* Change to `top: 0;` if you want it at the top */
+  left: 0;
+  width: 100%;
+  background: #fff; /* Optional background */
+  overflow: hidden;
+  z-index: 9999; /* So it stays on top */
+  border-top: 1px solid #ccc; /* Optional border */
+}
+
+.marquee {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scrollMarquee 15s linear infinite;
+  gap: 20px;
+}
+
+.marquee span {
+
 color: #692348;
 text-align: center;
 font-family: "Quicksand";
@@ -25,6 +49,26 @@ line-height: normal;
  margin: 0;
  margin-top: 10px;
   margin-bottom: 10px;
+
+
+
+  
+}
+
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.row-gap-content
+
+ {
+    gap: 28px;
 }
 
 
@@ -62,6 +106,10 @@ h3 {
 }
 
 /* h4 */
+h3.sub-heading{
+    margin-bottom: 15px !important;
+}
+
 
 h4 {
     font-family: 'Quicksand';
@@ -108,6 +156,24 @@ margin-top: 70px !important;
         width: 100%;
     }
 
+.arrow-container
+
+ {
+    display: none;
+}
+
+
+    .counter-number{
+        font-size: 2rem;
+    }
+
+
+    h2.new-max-width
+
+ {
+    text-align: center;
+}
+
 
     .margin-top-all{
     margin-top: 40px !important;
@@ -137,6 +203,9 @@ margin-top: 70px !important;
         font-size: 16px;
     }
 }
+
+
+
 
 /* Mobile (≤576px) */
 @media (max-width: 576px) {
@@ -188,20 +257,30 @@ margin-top: 70px !important;
     align-items: center;
     justify-content: center;
     background-color: #1e1e1e;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-radius: 10px 100px 10px 100px;
     font-family: Arial, sans-serif;
     color: white;
      padding-bottom: 15x;
-    height: 80px;
+   height: 115px;
     text-align: left;
 }
 
 .whatsapp-icon img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin-right: 20px;
-    margin-top: -30px;
+    margin-top: -75px;
+}
+
+
+
+
+
+p.description {
+    max-width: 345px;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .book-now-content {
@@ -215,16 +294,18 @@ margin-top: 70px !important;
     font-size: 22px;
     line-height: 28px;
     color: #FFFFFF;
+    margin-left: 27px;
+    margin-bottom: 5px;
 }
 
 .phone-number {
-    background: linear-gradient(to right, #f9a825, #fdd835);
+   background: linear-gradient(90deg, #FFA600 0%, #FFD17B 100%);
     padding: 4px 10px;
-    border-radius: 20px;
+    border-radius: 50px;
     color: #000;
     font-weight: bold;
     margin-top: 4px;
-    font-size: 18px;
+    font-size: 36px;
     width: fit-content;
 }
 
@@ -262,6 +343,10 @@ margin-top: 70px !important;
     .sec-2 .img-1,
     .sec-2 .img-2 {
         width: 100%; /* Mobile full width */
+    }
+
+    p.description{
+        margin-bottom: 15px !important;
     }
 }
 
@@ -573,10 +658,17 @@ button.accordion-button.collapsed
 }
 
 
-.sec-9 img {
+.card.h-100.border-0
+
+ {
+    background: transparent;
+}
+
+
+/* .sec-9 img {
     background-color: rgba(105, 35, 72, 0.08);
     border-radius: 10px 10px 150px 10px !important;
-}
+} */
 
 /* sec 11 */
 button.accordion-button.heading
@@ -663,7 +755,15 @@ svg {
 
 /* sec 13 */
 
-.sec-13{
+
+
+
+h2.new-max-width
+
+ {
+    max-width: 401px;
+}
+.sec-13 {
     background-color: #692348;
     height: 280px;
     border-radius: 15px 100px 15px 100px;
@@ -671,6 +771,9 @@ svg {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    height: auto;
 }
 
 
@@ -865,11 +968,77 @@ line-height: normal;
 }
 
 
+h1.heading.mobile-heading{
+    margin-bottom: 15px !important;
+}
+
+
 
     @media (max-width: 768px) {
       .flex-md-row {
         flex-direction: column !important;
       }
+      p.description {
+        margin:auto;
+
+    }
+ul#lexonTab{
+    width: 90%;
+}
+
+
+
+
+h2.text-center.content-text
+
+ {
+    font-size: 25px;
+    max-width: 235px;
+}
+
+
+    .content-paragraph{
+        font-size: 16px;
+    }
+
+    .margin-sections{
+        margin-top: 45px !important;
+    }
+
+
+    .whatsapp-icon img{
+      height: 55px;
+      width: 55px;
+    }
+
+
+
+.phone-number{
+    font-size: 16px;
+}
+
+
+
+    .book-now-btn
+ {
+   
+    padding: 17px 31px;
+    border-radius: 10px 100px 10px 100px;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding-bottom: 15x;
+    height: 95px;
+    text-align: left;
+}
+    
+
+h1.heading.mobile-heading
+
+ {
+    max-width: 343px;
+    margin: auto;
+}
+
 
 
       .img-slide {
