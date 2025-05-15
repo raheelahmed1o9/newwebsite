@@ -19,6 +19,9 @@ body {
 
 
 
+
+
+
 .marquee-fixed {
   position: fixed;
   top: 0; /* Change to `top: 0;` if you want it at the top */
@@ -313,10 +316,10 @@ p.description {
         .accordion-items {
             position: relative; 
         }
-/*       
+      
 .accordion-items {
     box-shadow: 0px 4px 14.6px 0px rgba(0, 0, 0, 0.10);
-} */
+}
 
 
 .accordion-button::after {
@@ -642,6 +645,22 @@ svg {
 
 /* sec 13 */
 
+.custom-postion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+    position: fixed;
+    bottom: 156px;
+    left: 35px;
+    z-index: 99999999999999;
+}
+
+img.soical-ciosn-all
+ {
+    height: 50px;
+    animation: bounce 1s infinite alternate;
+}
 
 
 
@@ -686,7 +705,7 @@ img.fixed-bottom {
 }
 
 
-.btn-footer {
+.btn-footer.mobile {
     position: fixed;
     bottom: 61px;
     z-index: 9999999;
@@ -706,7 +725,7 @@ img.fixed-bottom {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 70px 20px;
+  padding: 30px 20px;
   margin-top: 40px;
   gap:20px;
 }
@@ -925,7 +944,7 @@ h1.heading.mobile-heading{
       border: none;
     }
 
-    .accordion-header {
+    .accordion-headers {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -934,7 +953,7 @@ h1.heading.mobile-heading{
       transition: color 0.3s ease;
     }
 
-    .accordion-header h4 {
+    .accordion-headers h4 {
       margin: 0;
       font-size: 20px;
       font-weight: bold;
@@ -943,7 +962,7 @@ h1.heading.mobile-heading{
        font-family: 'Quicksand';
     }
 
-    .accordion.open .accordion-header h4 {
+    .accordion.open .accordion-headers h4 {
       color: white;
       font-family: 'Quicksand';
 
@@ -966,15 +985,28 @@ h1.heading.mobile-heading{
     }
 
 
+.header {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
 
+.header.scrolled {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+    
 
 
 .header {
   position: fixed;
-  top: 20;
+  top: 51px;
   left: 0;
   width: 100%;
   z-index: 1000;
+      padding: 20px;
   
 }
 
