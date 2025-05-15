@@ -49,7 +49,8 @@
         <div class="container hero_sec">
           <div class="sticky-top py-2" style="z-index: 1020">
             
- <div class="container header mt-2">
+<div class="header">
+  <div class="container mt-2">
     <div class="row align-items-center justify-content-between flex-nowrap">
       <!-- Left Image -->
       <div class="col-auto">
@@ -66,6 +67,8 @@
       </div>
     </div>
   </div>
+</div>
+
 
 
           <!-- Banner Section -->
@@ -893,10 +896,10 @@ Languages: English, Nepali, Hindi, Deutsch
               <img src="image 1 (1) 1 1 (1).png" alt="NAD+ Drip" />
               <div class="title">NAD+ IV Drip</div>
             </li>
-            <li class="splide__slide img-slide">
+            <!-- <li class="splide__slide img-slide">
               <img src="image 2 (1) 1.png" alt="Glutathione Drip" />
               <div class="title">Glutathione IV Drip</div>
-            </li>
+            </li> -->
             <li class="splide__slide img-slide">
               <img src="image.png" alt="Hydration Boost IV" />
               <div class="title">Hydration Boost IV</div>
@@ -1005,6 +1008,7 @@ Languages: English, Nepali, Hindi, Deutsch
       <div class="accordion content-acc" id="accordion2">
         <div class="accordion-header" onclick="toggleAccordion('accordion2')">
           <h4>How does it improve my skin?</h4>
+          <div class="chiv-icon">
           <svg
             class="chevron"
             viewBox="0 0 24 24"
@@ -1019,6 +1023,7 @@ Languages: English, Nepali, Hindi, Deutsch
               stroke-linejoin="round"
             />
           </svg>
+          </div>
         </div>
         <div class="accordion-content">
           <div class="accordion-text">
@@ -1351,7 +1356,7 @@ Languages: English, Nepali, Hindi, Deutsch
       <div class="container-fluid my-top">
         <div class="container-fluid footer">
           <img class="logo" src="Images/Group 28.png" alt="" />
-          <footer class="footer-icons">
+          <div class="footer-icons">
             <div class="footer-item">
               <div class="footer-icon">
                 <img src="Images/Phone.png" alt="" />
@@ -1376,9 +1381,21 @@ Languages: English, Nepali, Hindi, Deutsch
               </div>
               <div>Lab at Home</div>
             </div>
-          </footer>
+          </div>
         </div>
       </div>
+       <div class="btn-fixed container  ">
+<div class="btn-footer ">
+  <a href="">
+    Book Your Glutathione IV Now
+  </a>
+</div>
+       </div>
+
+       <div class="conatiner social-icon">
+       <img class="fixed-bottom" src="social.png" alt="">
+       </div>
+      
     </footer>
     <div
       style="padding: 10px; text-align: center; margin: 0px"
@@ -1515,6 +1532,7 @@ Languages: English, Nepali, Hindi, Deutsch
     }
   }
 
+document.addEventListener("DOMContentLoaded", function () {
   // Get all elements with the class 'margin-sections'
   let marginSections = document.querySelectorAll(".margin-sections");
 
@@ -1531,6 +1549,8 @@ Languages: English, Nepali, Hindi, Deutsch
       sectionWrappers[index].style.marginLeft = marginLeft;
     }
   });
+});
+
 
   const wrapper = document.getElementById("splide-wrapper");
   const originalSlides = Array.from(wrapper.children);
