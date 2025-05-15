@@ -33,7 +33,7 @@ body {
 .marquee {
   display: inline-flex;
   white-space: nowrap;
-  animation: scrollMarquee 15s linear infinite;
+  animation: scrollMarquee 30s linear infinite;
   gap: 20px;
 }
 
@@ -882,7 +882,7 @@ h1.heading.mobile-heading{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 12px;
+      padding: 26px;
       cursor: pointer;
       transition: color 0.3s ease;
     }
@@ -902,15 +902,20 @@ h1.heading.mobile-heading{
 
     }
 
-    .chevron {
-      width: 24px;
-      height: 24px;
-      transition: transform 0.4s ease-in-out;
-      color: black;
-    }
+  .chevron {
+  width: 30px;
+  height: 30px;
+
+  transition: transform 0.4s ease-in-out;
+  color: black;
+ 
+  
+}
+
 
     .accordion.open .chevron {
       color: white;
+        
     }
 
     .rotate {
@@ -1018,6 +1023,15 @@ h1.heading.mobile-heading{
       position: relative;
       z-index: 1;
     }
+
+
+h3.text-center.content-text-heading
+ {
+    font-size: 52px;
+    margin-top: 13px;
+    margin-bottom: 34px;
+}
+
 
     .slide-number {
       background-color: #580E3C;

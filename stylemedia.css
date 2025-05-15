@@ -26,6 +26,16 @@ margin-top: 70px !important;
     }
 
 
+.sec-2
+ {
+    background-image: url(Images/sec2_bg.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
    img.img-content {
     width: 256px;
 } 
@@ -185,6 +195,13 @@ h2.main-heading
 }
 
 
+h3.text-center.content-text-heading
+ {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+
 
 
 
@@ -197,6 +214,13 @@ h2.main-heading
     }
 ul#lexonTab{
     width: 90%;
+}
+
+
+h1.heading.mobile-heading
+ {
+    line-height: 46px;
+    font-size: 45px;
 }
 
 
@@ -271,11 +295,11 @@ h1.heading.mobile-heading
 
 
     .booking-title{
-        font-size: 48px !important;
+        font-size: 40px !important;
     }
 
     .booking-subtitle{
-         font-size: 48px !important; 
+         font-size: 40px !important; 
     
     }
     .step-circle{
@@ -324,7 +348,7 @@ h1.heading.mobile-heading
 a.btn-content img
 
  {
-    width: 320px;
+    width: 248px;
  }
 
 
@@ -362,7 +386,7 @@ a.btn-content img
 
 
 h2 {
-        font-size: 48px !important;
+        font-size: 45px !important;
         line-height: 44px;
         text-align: center;
     }
@@ -385,11 +409,21 @@ h2 {
 
         @media (max-width: 425px) {
         .section-titles{
-            font-size: 20px;
+            font-size: 30px;
         }
         .card-content{
     height: 400px;
 }
 
 
+
+button.accordion-button.collapsed {
+    gap: 9px;
+}
+
+
+    button.accordion-button.collapsed {
+   font-size: 16px;
+        line-height: 23px;
+    }
        }
