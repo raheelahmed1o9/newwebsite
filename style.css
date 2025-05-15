@@ -197,8 +197,9 @@ img.img-content
 
 
     h2 {
-        font-size: 36px;
-        line-height: 46px;
+        font-size: 48px !important;
+        line-height: 44px;
+        text-align: center;
     }
 
     h3 {
@@ -207,8 +208,8 @@ img.img-content
     }
 
     p {
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 18px;
+        line-height: 29px;
     }
 
 
@@ -222,24 +223,22 @@ img.img-content
 
 /* Mobile (≤576px) */
 @media (max-width: 576px) {
-    h1 {
-        font-size: 36px;
-        line-height: 44px;
-    }
+   
 
     h2 {
-        font-size: 28px;
-        line-height: 36px;
+        font-size: 48px !important;
+        line-height: 44px;
+        text-align: center;
     }
 
     h3 {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 24px;
+        line-height: 36px;
     }
 
     p {
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 18px;
+        line-height: 29px;
     }
 }
 
@@ -352,6 +351,13 @@ p.description {
     .image-flex-box {
         flex-direction: column !important;
     }
+
+a.btn-content img
+
+ {
+    width: 320px;
+ }
+
 
     .sec-2 .img-1,
     .sec-2 .img-2 {
@@ -584,7 +590,7 @@ button.accordion-button.collapsed
 .advantage-title {
     max-width: 100%;
     font-size: 2rem;
-    font-weight: bold;
+   
     margin-bottom: 1.5rem;
 }
 
@@ -1071,11 +1077,11 @@ h1.heading.mobile-heading
 
 
     .booking-title{
-        font-size: 32px;
+        font-size: 48px !important;
     }
 
     .booking-subtitle{
-         font-size: 32px;
+         font-size: 48px !important; 
     
     }
     .step-circle{
@@ -1108,7 +1114,7 @@ h1.heading.mobile-heading
       border-radius: 25px;
       box-sizing: border-box;
       overflow: hidden;
-      border: 1px solid black;
+      border: 1px solid #A9A9A9;
       background-color: transparent;
       transition: background-color 0.3s ease, border 0.3s ease;
       margin-bottom: 20px;
@@ -1128,7 +1134,7 @@ h1.heading.mobile-heading
       transition: color 0.3s ease;
     }
 
-    .accordion-header h2 {
+    .accordion-header h4 {
       margin: 0;
       font-size: 20px;
       font-weight: bold;
@@ -1137,7 +1143,7 @@ h1.heading.mobile-heading
        font-family: 'Quicksand';
     }
 
-    .accordion.open .accordion-header h2 {
+    .accordion.open .accordion-header h4 {
       color: white;
       font-family: 'Quicksand';
 
@@ -1309,7 +1315,27 @@ h1.heading.mobile-heading
     @media (max-width: 778px) {
       .section-titles {
         font-size: 32px;
+        line-height: 36px;
       }
+
+h2.main-heading
+ {
+    line-height: 47px;
+    margin-bottom: 25px;
+}
+
+
+
+      .tes-subtitle
+ {
+    margin-bottom: 12px;
+}
+
+      .sec-13{
+        padding-top: 33px;
+        padding-bottom: 33px;
+      }
+
 
       .slide-title{
     font-size: 16px;
@@ -1424,12 +1450,26 @@ h2.splide-heading {
         height: 32px;
       }
 
+      svg.chevron {
+    display: none;
+}
+
+
+.accordion.content-acc{
+    width: 100%;
+}
+    
+.accordion-header{
+    padding: 20px;
+}
+
+
       .arrow-container {
     display: none;
 }
 
       h2.splide-heading {
-        font-size: 24px;
+        font-size: 48px !important;
       }
 
       .title {
