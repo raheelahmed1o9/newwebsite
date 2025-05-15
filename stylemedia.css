@@ -1,0 +1,395 @@
+
+
+@media (max-width: 1024px) {
+    .margin-top-all{
+margin-top: 70px !important;
+}
+
+
+}
+
+@media (max-width: 991.98px) {
+    .main-sec {
+        min-height: auto;
+        padding: 40px 0;
+    }
+}
+
+
+
+    @media (max-width: 768px) {
+
+    h1 {
+        font-size: 48px;
+        line-height: 58px;
+        width: 100%;
+    }
+
+
+   img.img-content {
+    width: 256px;
+} 
+
+.arrow-container
+
+ {
+    display: none;
+}
+
+
+    .counter-number{
+        font-size: 2rem;
+    }
+
+
+    h2.new-max-width
+
+ {
+    text-align: center;
+}
+
+
+    .margin-top-all{
+    margin-top: 40px !important;
+}
+
+
+
+
+
+    h2 {
+        font-size: 48px !important;
+        line-height: 44px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 29px;
+    }
+
+
+    .tag-section p{
+        font-size: 16px;
+    }
+
+
+      .testimonial-card {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 30px;
+      }
+
+      .testimonial-image img {
+        margin-top: 20px;
+      }
+
+
+      .splide__arrow {
+        width: 32px;
+        height: 32px;
+      }
+
+      svg.chevron {
+    display: none;
+}
+
+
+.accordion.content-acc{
+    width: 100%;
+}
+    
+.accordion-header{
+    padding: 20px;
+}
+
+
+      .arrow-container {
+    display: none;
+}
+
+      h2.splide-heading {
+        font-size: 48px !important;
+      }
+
+      .title {
+        font-size: 20px;
+      }
+
+
+      .header-img{
+    max-height: 31px !important;
+    height: auto;
+    margin-left: -12px !important;
+}
+
+
+   .section-titles {
+        font-size: 32px;
+        line-height: 36px;
+      }
+
+h2.main-heading
+ {
+    line-height: 47px;
+    margin-bottom: 25px;
+}
+
+
+
+      .tes-subtitle
+ {
+    margin-bottom: 12px;
+}
+
+      .sec-13{
+        padding-top: 33px;
+        padding-bottom: 33px;
+      }
+
+
+      .slide-title{
+    font-size: 16px;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 35px;
+
+        height: 35px;
+      }
+      .swiper-button-next::after,
+      .swiper-button-prev::after {
+        font-size: 16px;
+      }
+
+      .title-arrow-container
+ {
+    flex-direction: column;
+    align-items: end;
+}
+
+.card-content{
+    height: 500px;
+}
+
+.slide-number{
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+}
+
+
+
+
+
+   .flex-md-row {
+        flex-direction: column !important;
+      }
+      p.description {
+        margin:auto;
+
+    }
+ul#lexonTab{
+    width: 90%;
+}
+
+
+
+
+h2.text-center.content-text
+
+ {
+    font-size: 25px;
+    max-width: 235px;
+}
+
+
+    .content-paragraph{
+        font-size: 16px;
+    }
+
+    .margin-sections{
+        margin-top: 45px !important;
+    }
+
+
+    .whatsapp-icon img{
+      height: 55px;
+      width: 55px;
+    }
+
+
+
+.phone-number{
+    font-size: 16px;
+}
+
+
+
+    .book-now-btn
+ {
+   
+    padding: 17px 31px;
+    border-radius: 10px 100px 10px 100px;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding-bottom: 15x;
+    height: 95px;
+    text-align: left;
+}
+    
+
+h1.heading.mobile-heading
+
+ {
+    max-width: 343px;
+    margin: auto;
+}
+
+
+
+      .img-slide {
+    border-radius: 20px 20px 67px 20px;}
+
+       .width-fit{
+        width: 100%;
+        margin-top: 40px;
+          margin-left: 0px;
+    }
+        .content-img{
+            width: 100%;
+            height:460.95px;
+
+           
+    }
+
+
+    .booking-title{
+        font-size: 48px !important;
+    }
+
+    .booking-subtitle{
+         font-size: 48px !important; 
+    
+    }
+    .step-circle{
+        font-size: 16px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .step-text{
+        margin-top:7px;
+    }
+    .step-text{
+        font-size: 16px;
+    }
+
+
+
+   .section-heading {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .sec-2 img {
+            max-width: 100%;
+            height: auto;
+        
+        }
+.accordion-item button{
+     font-size: 16px;
+}
+        button.accordion-button.collapsed{
+            font-size: 16px;
+        }
+        .icon-circle{
+            width: 40px;
+             height: 40px;        
+        
+        }
+
+
+
+          .image-flex-box {
+        flex-direction: column !important;
+    }
+
+a.btn-content img
+
+ {
+    width: 320px;
+ }
+
+
+    .sec-2 .img-1,
+    .sec-2 .img-2 {
+        width: 100%; /* Mobile full width */
+    }
+
+    p.description{
+        margin-bottom: 15px !important;
+    }
+
+
+
+    } 
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+  .footer-icons {
+    flex-direction: column;
+   
+    gap: 20px;
+  }
+
+  img.logo
+
+ {
+    width: 100%;
+}
+
+
+h2 {
+        font-size: 48px !important;
+        line-height: 44px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 29px;
+    }
+}
+
+
+
+
+
+
+        @media (max-width: 425px) {
+        .section-titles{
+            font-size: 20px;
+        }
+        .card-content{
+    height: 400px;
+}
+
+
+       }
