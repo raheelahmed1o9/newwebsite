@@ -8,6 +8,7 @@
   .main-sec {
     min-height: auto;
     padding: 40px 0;
+    margin-top: 82px;
   }
 }
 
@@ -28,6 +29,12 @@
 }
 
 @media (max-width: 768px) {
+
+.header{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
 img.soical-ciosn-all {
     height: 40px;
 }
